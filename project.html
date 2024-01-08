@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Input</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image:url(../static/images/cyber-security-2765707_1920.jpg);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color:black;
+    }
+
+    form {
+      width: 400px;
+      padding: 40px;
+      background-color:#ccc; 
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color:#fff;
+    }
+
+    input[type="text"] {
+      width: calc(100% - 16px);
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="urlForm" action="{{url_for('index')}}" method="post" class="form">
+    <h1>PhishGuard - Phishing URL Check!</h1>
+    <h3 style="color:black;"><label for="url"><b>Enter URL:</b></label></h3>
+    <input type="text" id="url" name="urlInput">
+    
+    <input type="submit" value="Check URL"> 
+
+    
+    <a href="{{url_for('home')}}">Home</a>
+  </form>
+
+  
+</body>
+</html>
