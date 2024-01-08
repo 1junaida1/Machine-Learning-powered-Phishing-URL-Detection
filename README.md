@@ -1,5 +1,5 @@
 # Machine-Learning-powered-Phishing-URL-Detection
-A Machine Learning based approach for Phishing URL Detection
+A Machine Learning based approach for Phishing URL Detection 
 Phishing attacks have become prevalent in recent times.Cybersecurity domain has been ever evolving to tackle the increasing fraudulent websites,emails,links etc.Data privacy and security is an important aspect of safeguarding personal information
 Machine Learning approach is a cutting edge technology that can be utilised to detect phishing URL
 Several Machine Learning algorithms have been tested and validated and finally the algorithm with the highest accuracy have been selected for deployment
